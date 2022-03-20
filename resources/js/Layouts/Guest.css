@@ -156,7 +156,7 @@ header {
 }
 
 .sci li a:hover {
-    transform: translateY(  -5px);
+    transform: translateY(-5px);
 }
 
 .control-nav {
@@ -181,4 +181,44 @@ header {
   }
   .control-nav li.active {
     opacity: 1;
+  }
+
+  /*button auth*/
+
+  
+
+  .circle {
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    opacity: 0.9;
+    -webkit-box-shadow: 6px 15px 34px -16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 15px 34px -16px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 15px 34px -16px rgba(0, 0, 0, 0.75);
+    transition: opacity 0.4s;
+  }
+  .circle:hover {
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+  
+  .text_auth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 12px;
+    font-family: Permanent Marker;
+    letter-spacing: 6px;
+    pointer-events: none;
+  }
+
+  .text_auth i {
+
+    color: #d10a20;
   }

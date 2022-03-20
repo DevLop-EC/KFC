@@ -5980,76 +5980,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _img_logos_kfcdark_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../img/logos/kfcdark.png */ "./public/img/logos/kfcdark.png");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
 
 function Navbar() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("nav", {
-    className: "navbar navbar-expand-lg navbar-dark  mb-4",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-      className: "container",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
-        src: _img_logos_kfcdark_png__WEBPACK_IMPORTED_MODULE_2__["default"],
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("header", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "/",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+        src: "/img/logos/kfcdark.png",
         alt: "logo kfc",
-        className: "logo",
-        href: "/"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("button", {
-        className: "navbar-toggler",
-        type: "button",
-        "data-bs-toggle": "collapse",
-        "data-bs-target": "#navbarSupportedContent",
-        "aria-controls": "navbarSupportedContent",
-        "aria-expanded": "false",
-        "aria-label": "Toggle navigation",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
-          className: "navbar-toggler-icon"
+        className: "logo"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+      className: "navigation",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+          href: route("home"),
+          children: "Inicio"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-        className: "collapse navbar-collapse",
-        id: "navbarSupportedContent",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
-          className: "navbar-nav me-auto mb-2 mb-lg-0",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            className: "nav-item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-              className: "nav-link",
-              href: route("home"),
-              children: "Inicio"
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            className: "nav-item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-              className: "nav-link",
-              href: route("dashboard"),
-              children: "Dashboard"
-            })
-          })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
-          className: "navbar-nav mb-2 mb-lg-0",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            className: "nav-item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-              className: "nav-link",
-              href: route("login"),
-              children: "Inciar Sesion"
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-            className: "nav-item",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
-              className: "nav-link",
-              href: route("register"),
-              children: "Registro"
-            })
-          })]
-        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+          href: route("dashboard"),
+          children: "Dashboard"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "button",
+          "class": "btn btn-light rounded-circle",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
+            "class": "fa-regular fa-user-large"
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.Link, {
+          href: route("register"),
+          children: "Registro"
+        })
       })]
-    })
+    })]
   });
 }
+
+/***/ }),
+
+/***/ "./resources/js/Components/SliderSection/SliderSection.jsx":
+/*!*****************************************************************!*\
+  !*** ./resources/js/Components/SliderSection/SliderSection.jsx ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SliderSection": () => (/* binding */ SliderSection)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+var SliderSection = function SliderSection() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "footer",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      "class": "control-nav",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+        className: "sci",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          "class": "slider-nav"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          "class": "slider-nav"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          "class": "slider-nav"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          "class": "slider-nav"
+        })]
+      })
+    })
+  });
+};
 
 /***/ }),
 
@@ -7312,29 +7324,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ Home)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Layouts_Guest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Layouts/Guest */ "./resources/js/Layouts/Guest.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _Components_SliderSection_SliderSection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/SliderSection/SliderSection */ "./resources/js/Components/SliderSection/SliderSection.jsx");
+/* harmony import */ var _Layouts_Guest__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Layouts/Guest */ "./resources/js/Layouts/Guest.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
 
 function Home() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "container",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "card",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          className: "card-body",
-          children: "Your home page"
-        })
-      })
-    })
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "content",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "text",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("h2", {
+          children: ["It's finger ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), " licking ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("span", {
+            children: "Good."
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+          children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor quia perspiciatis omnis deleniti impedit maiores, deserunt libero aspernatur reprehenderit qui suscipit aut, nostrum sequi facere! Repellendus aliquid sapiente ab"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "/",
+          className: "btn__order",
+          children: "Order Now"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "slider",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "slides active",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+            src: "/img/menu/burger_fries.png"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "slides",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+            src: "/img/menu/burger.png"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "slides",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+            src: "/img/menu/french_fries.png"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          className: "slides",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+            src: "/img/menu/fried_chicken.png"
+          })
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_SliderSection_SliderSection__WEBPACK_IMPORTED_MODULE_1__.SliderSection, {})]
   });
 }
 
 Home.layout = function (page) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_Layouts_Guest__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Layouts_Guest__WEBPACK_IMPORTED_MODULE_2__["default"], {
     children: page,
     title: "Home"
   });
@@ -13058,7 +13103,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Ubuntu:wgh@300,400,500,700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Ubuntu', sans-serif;\n}\n\n.main {\n    position: relative;\n    min-height: 100vh;\n    background: radial-gradient(#f0483a, #d10a20);\n}\n\n.navbar {\n    box-shadow: none;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Ubuntu', sans-serif !important;\n}\n\n\n\n.main {\n    position: relative;\n    min-height: 100vh;\n    background: radial-gradient(#f0483a, #d10a20);\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 40px 100px;\n}\n\n\nheader {\n    position: absolute;\n    top: 0%;\n    left: 0%;\n    width: 100%;\n    padding:  0px 100px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    z-index: 1000;\n}\n\n.logo {\n    max-width: 90px;\n}\n\n.navigation {\n    display: flex;\n\n}\n\n.navigation li {\n    list-style: none;\n    \n}\n\n.navigation li a {\n    position: relative;\n    color: #fff !important;\n    text-decoration: none;\n    margin-left: 40px;\n}\n\n.content {\n    position: relative;\n    width: 100%;\n    /*padding-top: 50px;*/\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.content .text {\n    width: 100%;\n    max-width: 600px;\n    \n}\n\n.content .text h2 {\n    color: #fff !important;\n    font-size: 4em;\n    font-weight: 300 !important;\n   \n}\n\n.content .text h2 span{\n font-weight: 700;\n}\n\n.content .text p {\n    color: #fff !important;\n    font-weight: 400 !important;\n    font-size: 1.1em !important;\n    line-height: 1.5em !important;\n    margin: 20px 0 !important;\n\n}\n\n.content .text a {\n    color: #000 !important;\n}\n\n.btn__order {\n    position: relative;\n    display: inline-block;\n    padding:  20px 50px;\n    background: #fff;\n    color: #333;\n    font-size: 1.1em;\n    font-weight: 500;\n    border-radius: 40px;\n    text-decoration: none;\n    transition: 0.25s;\n}\n\n.btn__order:hover {\n    letter-spacing: 2px;\n}\n\n.slider {\n    position: relative;\n}\n\n.slider .slides {\n    display: none;\n}\n\n.slider .slides.active {\n    display: block;\n}\n\n.slider .slides img {\n    width: 100%;\n   max-width: 600px;\n    \n}\n\n\n.footer {\n    position: absolute;\n    bottom: 0;\n    width: 100%;\n    display: flex;\n    padding: 30px 100px;\n    justify-content: space-between;\n    align-items: flex-end;\n}\n\n.sci {\n    display: flex;\n}\n\n.sci li {\n    list-style: none;\n}\n\n.sci li a {\n    color: #fff;\n    font-size:  2em;\n    margin-right: 20px;\n    display: inline-block;\n    transition: 0.25s;\n}\n\n.sci li a:hover {\n    transform: translateY(-5px);\n}\n\n.control-nav {\n\n    left: 3rem;\n    \n    z-index: 999;\n  }\n  .control-nav ul {\n    position: relative;\n    list-style: none;\n    padding: 0;\n  }\n  .control-nav li {\n    position: relative;\n    width: 1.5rem;\n    height: 0.5rem;\n    margin: 1.5rem 6px;\n    background: white;\n    opacity: 0.5;\n    border-radius: 3rem;\n  }\n  .control-nav li.active {\n    opacity: 1;\n  }\n\n  /*button auth*/\n\n  \n\n  .circle {\n    background-color: #ffffff;\n    height: 50px;\n    width: 50px;\n    border-radius: 50%;\n    cursor: pointer;\n    margin: auto;\n    position: relative;\n    opacity: 0.9;\n    box-shadow: 6px 15px 34px -16px rgba(0, 0, 0, 0.75);\n    transition: opacity 0.4s;\n  }\n  .circle:hover {\n    opacity: 1;\n    transition: opacity 0.4s;\n  }\n  \n  .text_auth {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    color: #fff;\n    font-size: 12px;\n    font-family: Permanent Marker;\n    letter-spacing: 6px;\n    pointer-events: none;\n  }\n\n  .text_auth i {\n\n    color: #d10a20;\n  }", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13282,21 +13327,6 @@ var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
 
-
-/***/ }),
-
-/***/ "./public/img/logos/kfcdark.png":
-/*!**************************************!*\
-  !*** ./public/img/logos/kfcdark.png ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/kfcdark.png?cc99f618fda28a82eaa534f36904a48e");
 
 /***/ }),
 
